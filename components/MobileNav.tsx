@@ -33,7 +33,7 @@ export default function MobileNav() {
             </SheetTrigger>
             <SheetContent className="flex flex-col">
                 <div className="mt-32 mb-40 text-center text-2xl"><Link href="/"><h1 className="text-4xl font-semibold">Hamze <span className="text-accent">MO</span></h1></Link></div>
-                <nav className=" flex flex-col justify-center items-center gap-8">
+                <nav className=" flex flex-col justify-center items-center gap-8 ">
                     {
                         links.map((link, index) => {
                             return (

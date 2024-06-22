@@ -18,37 +18,37 @@ const about = {
     describtion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid iste itaque perferendis eius molestias tempore impedit recusandae, numquam repellat pariatur reprehenderit similique facilis, doloribus autem blanditiis, maiores voluptatibus explicabo modi!",
     info: [
         {
-            fieldName: "Name",
+            fieldName: "Name:",
             fieldValue: "Hamze Ahmed"
         },
         {
-            fieldName: "Phone",
+            fieldName: "Phone:",
             fieldValue: "(+30) 695 531 21 76"
         },
 
         {
-            fieldName: "Experience ",
+            fieldName: "Experience: ",
             fieldValue: "1+ Years"
         },
         {
-            fieldName: "Skype",
+            fieldName: "Skype:",
             fieldValue: "1+ Years"
         },
         {
-            fieldName: "Nationality",
+            fieldName: "Nationality:",
             fieldValue: "Somali"
         },
         {
-            fieldName: "Email",
+            fieldName: "Email:",
             fieldValue: "hamzemohamed9412@gmail.com"
         },
         {
-            fieldName: "Freelance",
+            fieldName: "Freelance:",
             fieldValue: "Available"
         },
         {
-            fieldName: "Languages",
-            fieldValue: "Englsih, Somali, Arabic"
+            fieldName: "Languages:",
+            fieldValue: "Englsih,Somali,Arabic"
         },
 
     ]
@@ -230,7 +230,7 @@ export default function Resume() {
                                     {about.info.map((item, index) => {
                                         return <li key={index} className="flex items-center justify-center xl:justify-start gap-4 ">
                                             <span className="text-white/60">{item.fieldName}</span>
-                                            <span className="text-xl">{item.fieldValue}</span>
+                                            <span className="text-xl lg:flex">{item.fieldValue}</span>
                                         </li>
                                     })
                                     }

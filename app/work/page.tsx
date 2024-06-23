@@ -11,19 +11,19 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
     {
         num: "01",
-        cagegory: "frontend",
+        cagegory: "Full-Stack",
         title: "project 1",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolorum molestias atque nobis exercitationem distinctio, aliquam aut, sequi dicta possimus esse officiis! Recusandae ipsa dolore sunt architecto dolores at suscipit.",
-        stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+        description: "Designed e commerce website for a grocery store, implementing features such as admin panel and data list for sales purposes ",
+        stack: [{ name: "Tailwind.css" }, { name: "React.Js" }, { name: "Nest.JS" }, { name: "MongoDB" }],
         image: '/assets/work/1.png',
         live: '',
         github: ''
     },
     {
         num: "02",
-        cagegory: "Backend",
+        cagegory: "Front-End",
         title: "project 2",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolorum molestias atque nobis exercitationem distinctio, aliquam aut, sequi dicta possimus esse officiis! Recusandae ipsa dolore sunt architecto dolores at suscipit.",
+        description: "I've built my portfolio using Next.js and Tailwind CSS. It showcases my projects, skills, and experiences as a full stack developer. This modern, responsive site highlights my proficiency in cutting-edge web development technologies.",
         stack: [{ name: "Next.js" }, { name: "Tailewind.css" }, { name: "Javascript" }],
         image: '/assets/work/2.png',
         live: '',
@@ -33,7 +33,7 @@ const projects = [
         num: "03",
         cagegory: "Front-End",
         title: "project 3",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolorum molestias atque nobis exercitationem distinctio, aliquam aut, sequi dicta possimus esse officiis! Recusandae ipsa dolore sunt architecto dolores at suscipit.",
+        description: "Implemented project creation functionality allowing users to track time spent on each project Implemented task management features including adding, deleting, completing tasks, and resetting task timers. Implemented start and stop timer functionality with real - time updates",
         stack: [{ name: "React.js" }, { name: "Tailewind.css" }, { name: "Javascript" }],
         image: '/assets/work/3.png',
         live: '',
@@ -58,7 +58,7 @@ export default function Work() {
                             <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                                 {project.num}
                             </div>
-                            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all  duration-500  capitalize">{project.cagegory} projects</h2>
+                            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all  duration-500  capitalize">{project.cagegory}</h2>
                             <p className="text-white/60">{project.description}</p>
                             <ul className="flex gap-4">
                                 {project.stack.map((item, index) => {

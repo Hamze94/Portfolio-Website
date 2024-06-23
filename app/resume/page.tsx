@@ -16,7 +16,7 @@ import {
     from "react-icons/si";
 const about = {
     title: "About me",
-    describtion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid iste itaque perferendis eius molestias tempore impedit recusandae, numquam repellat pariatur reprehenderit similique facilis, doloribus autem blanditiis, maiores voluptatibus explicabo modi!",
+    description: "I hold a diploma in Computer Science and have completed a certified web developer program at Code Labs Academy. My education includes comprehensive courses in various programming languages, both online and in-person. This combination of formal education and specialized training has equipped me with a solid foundation in web development and a broad understanding of computer science principles, enabling me to create efficient and dynamic web applications",
     info: [
         {
             fieldName: "Name:",
@@ -57,26 +57,11 @@ const about = {
 const expirence = {
     icon: "/assets/resume/badge.svg",
     title: "My experince",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos tempore architecto est iste nemo dolores, saepe soluta sequi ipsam, numquam praesentium assumenda corporis dolorum! Porro nostrum totam eveniet voluptas reiciendis!",
+    description: "As a full stack developer, I have extensive experience in both front-end and back-end technologies. I've built and maintained dynamic web applications, utilizing languages like JavaScript, Nest.JS, and Next.JS. My expertise includes frameworks such as React and Node.js, as well as working with databases like MongoDB to deliver comprehensive solutions.",
     items: [
         {
             company: "Danjire Sopping Center",
             postion: "Full Stack Developer",
-            duration: "2022 - 2023"
-        },
-        {
-            company: "Danjire Sopping Center",
-            postion: "Front-End Developer Inrern",
-            duration: "2022 - 2023"
-        },
-        {
-            company: "Danjire Sopping Center",
-            postion: "Full Stack Developer",
-            duration: "2022 - 2023"
-        },
-        {
-            company: "Danjire Sopping Center",
-            postion: "Front-End Developer Inrern",
             duration: "2022 - 2023"
         },
 
@@ -85,7 +70,7 @@ const expirence = {
 const education = {
     icon: "/assets/resume/cap.svg",
     title: "My education",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos tempore architecto est iste nemo dolores, saepe soluta sequi ipsam, numquam praesentium assumenda corporis dolorum! Porro nostrum totam eveniet voluptas reiciendis!",
+    description: "I hold a diploma in Computer Science and have completed a certified web developer program at Code Labs Academy. My education includes comprehensive courses in various programming languages, both online and in-person. This combination of formal education and specialized training has equipped me with a solid foundation in web development and a broad understanding of computer science principles, enabling me to create efficient and dynamic web applications",
     items: [
         {
             company: "Code Laps Academy",
@@ -107,7 +92,7 @@ const education = {
 }
 const skills = {
     title: "My skills",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam earum nam officia culpa magni, laudantium velit? Perferendis eos minus non dolores ipsam! Dolor expedita eligendi a nobis. Minus, aliquam porro.",
+    description: "As a full stack developer, I have extensive experience in both front-end and back-end technologies. I've built and maintained dynamic web applications, utilizing languages like JavaScript, Nest.JS, and Next.JS. My expertise includes frameworks such as React and Node.js, as well as working with databases like MongoDB to deliver comprehensive solutions.",
     skillList: [
         {
             icon: <FaHtml5 />,
@@ -167,7 +152,7 @@ export default function Resume() {
                         <TabsContent value="experience" className="w-full  ">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className="text-4xl font-bold">{expirence.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{expirence.description}</p>
                                 <ScrollArea className="h-[400px]">
                                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                                         {expirence.items.map((item, index) => {
@@ -233,7 +218,7 @@ export default function Resume() {
                         <TabsContent value="about" className="w-full  text-center xl:text-left">
                             <div className="flex flex-col gap-[30px]">
                                 <h3 className=" text-4xl font-bold">{about.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 ">{about.describtion}</p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 ">{about.description}</p>
                                 <ul className=" grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0 ">
                                     {about.info.map((item, index) => {
                                         return <li key={index} className="flex items-center justify-center xl:justify-start gap-4 ">

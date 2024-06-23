@@ -7,16 +7,15 @@ import { motion } from "framer-motion";
 const services = [
     {
         num: "01",
-        title: "Frontend Developer",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam placeat deserunt expedita commodi quisquam sunt veritatis quo ut perspiciatis quidem magnam aperiam consequuntur tenetur quos, repellendus delectus amet ullam hic?",
+        title: "Front-End Developer",
+        description: "As a Frontend Developer, I specialize in creating the visual and interactive elements of websites and web applications. I translate design mockups into code using HTML, CSS, and JavaScript, ensuring that the user interface is responsive, accessible, and performs well on various devices and browsers. I optimize web performance, enhance user experience, and implement interactive features. Utilizing frameworks and libraries like React and Tailwind CSS, I ensure the site is efficient, maintainable, and user-friendly",
         href: "#",
     },
     {
         num: "02",
-        title: "Backend Developer",
+        title: "Back-End Developer",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam placeat deserunt expedita commodi quisquam sunt veritatis quo ut perspiciatis quidem magnam aperiam consequuntur tenetur quos, repellendus delectus amet ullam hic?",
+            "As a Backend Developer, I focus on building the server-side logic and database management for web applications. I utilize frameworks like Next.js, NestJS, and Node.js to create scalable, efficient, and secure backends. I handle data storage and retrieval with MongoDB, ensuring robust and optimized database interactions. My role includes creating APIs, managing server-side processes, and ensuring the overall performance and security of the application, enabling a seamless and reliable experience for users.",
         href: "#",
     },
 ];
@@ -42,8 +41,8 @@ export default function Services() {
                                 </Link>
                             </div>
                             <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transtion-all duration-500 ">{service.title}</h2>
-                            <p className="text-white/60 ">{service.description}</p>
-                            <div className="border-b border-white/20 w-full"></div>
+                            <p className="text-white/70 ">{service.description}</p>
+                            <div className="border-b border-white/20 w-full "></div>
                         </div>
                     ))}
                 </motion.div>

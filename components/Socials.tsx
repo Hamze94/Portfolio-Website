@@ -11,7 +11,12 @@ const socials = [
         icon: <FaTwitter />, path: 'https://x.com/HamzeMoham70376'
     }
 ]
-export default function Socials({ containerStyles, iconStyles }) {
+
+interface SocialsProps {
+    containerStyles: any;
+    iconStyles: any;
+}
+const Socials: React.FC<SocialsProps> = ({ containerStyles, iconStyles }) => {
     return (
         <div className={containerStyles}>
             {
@@ -23,3 +28,4 @@ export default function Socials({ containerStyles, iconStyles }) {
         </div>
     )
 }
+export default Socials;

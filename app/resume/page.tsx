@@ -10,7 +10,8 @@ import {
     from "react-icons/fa";
 import {
     SiTailwindcss,
-    SiNextdotjs
+    SiNextdotjs,
+    SiNestjs
 }
     from "react-icons/si";
 const about = {
@@ -19,7 +20,7 @@ const about = {
     info: [
         {
             fieldName: "Name:",
-            fieldValue: "Hamze Ahmed"
+            fieldValue: "Hamze Mohamed"
         },
         {
             fieldName: "Phone:",
@@ -135,7 +136,14 @@ const skills = {
         {
             icon: <FaNodeJs />,
             name: "node.js",
+
         },
+        {
+            icon: <SiNestjs />,
+            name: "nest.js",
+
+
+        }
     ]
 }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";

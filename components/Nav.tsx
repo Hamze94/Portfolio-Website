@@ -17,10 +17,7 @@ const links = [
         name: "work",
         path: "/work"
     },
-    {
-        name: "contact",
-        path: "/contact"
-    }
+
 ]
 export default function Nav() {
     const pathname = usePathname()

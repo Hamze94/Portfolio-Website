@@ -15,7 +15,7 @@ const projects = [
         title: "project 1",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolorum molestias atque nobis exercitationem distinctio, aliquam aut, sequi dicta possimus esse officiis! Recusandae ipsa dolore sunt architecto dolores at suscipit.",
         stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-        image: '/',
+        image: '/assets/work/1.png',
         live: '',
         github: ''
     },
@@ -25,7 +25,17 @@ const projects = [
         title: "project 2",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolorum molestias atque nobis exercitationem distinctio, aliquam aut, sequi dicta possimus esse officiis! Recusandae ipsa dolore sunt architecto dolores at suscipit.",
         stack: [{ name: "Next.js" }, { name: "Tailewind.css" }, { name: "Javascript" }],
-        image: '/',
+        image: '/assets/work/2.png',
+        live: '',
+        github: ''
+    },
+    {
+        num: "03",
+        cagegory: "Front-End",
+        title: "project 3",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolorum molestias atque nobis exercitationem distinctio, aliquam aut, sequi dicta possimus esse officiis! Recusandae ipsa dolore sunt architecto dolores at suscipit.",
+        stack: [{ name: "React.js" }, { name: "Tailewind.css" }, { name: "Javascript" }],
+        image: '/assets/work/3.png',
         live: '',
         github: ''
     }
